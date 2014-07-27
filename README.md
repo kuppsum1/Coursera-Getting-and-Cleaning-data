@@ -21,7 +21,7 @@ run_analysis.R code:
 1. The working directory is set to UCI HAR Dataset/test. The files subject_test.txt, X_test.txt and y_test.text are read into R using the function “read.table”. The three files are merged into a dataset called “test” using the function “cbind”.
 2.The working directory is set to UCI HAR Dataset/train. The files subject_train.txt, X_train.txt and y_train.text are read into R using the function “read.table”. The three files are merged into a dataset called “train” using the function “cbind”.
 3. The two datasets “test and “train” are merged into a single dataset called “data” using   “rbind”
-4. The mean and standard deviation values of X along with the subject and y values are extracted from the dataset “data” by suing the function "grep" and the dataset containing the values is called "mean_stddev_data".
+4. The mean and standard deviation values of X along with the subject and y values are extracted from the dataset “data” by using the function "grep" and the dataset containing the values is called "mean_stddev_data".
 5. The descriptive activity names are given to the second column containing y values by subsetting the dataset.
 6 The descriptive variable names are used for labeling the dataset.
 7. The second, independent tidy dataset "x" with the average of each variable for each activity and each subject is created using the “plyr” package and function “ddply”. The descriptive variable names are used for labeling the dataset.

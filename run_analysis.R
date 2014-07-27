@@ -34,7 +34,7 @@ names(mean_stddev_data) <- sub("std", "std_deviation", names(mean_stddev_data))
 names(mean_stddev_data) <- sub("X", "X-axis", names(mean_stddev_data))
 names(mean_stddev_data) <- sub("Y", "Y-axis", names(mean_stddev_data))
 names(mean_stddev_data) <- sub("Z", "Z-axis", names(mean_stddev_data))
-names(mean_stddev_data) <- sub("mag", "magnitude", names(mean_stddev_data))
+names(mean_stddev_data) <- sub("Mag", "Magnitude", names(mean_stddev_data))
 #creating a second, independent tidy data set with the average of each variable for each activity and each subject
 library(plyr)
 x <- ddply(mean_stddev_data, c("subject","activity"), function(x) colMeans(x[ ,c(3:81)]))

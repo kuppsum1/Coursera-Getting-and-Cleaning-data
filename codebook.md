@@ -1,4 +1,4 @@
-                                 DATA DICTIONARY - Course_Project
+                                 DATA DICTIONARY - Course_Project_Tidy_data
 
 
     subject  

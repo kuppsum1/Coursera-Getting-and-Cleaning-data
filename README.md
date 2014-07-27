@@ -11,7 +11,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern. ‘-XYZ’ is used to denote 3-axial signals in the X, Y and Z directions.
 
 
-The set of variables used in the dataset ‘Course_Project’ that were estimated from these signals are: 
+The set of variables used in the dataset ‘Course_Project_Tidy_data’ that were estimated from these signals are: 
 
 mean(): Mean value
 std(): Standard deviation
@@ -21,10 +21,10 @@ run_analysis.R code:
 1. The working directory is set to UCI HAR Dataset/test. The files subject_test.txt, X_test.txt and y_test.text are read into R using the function “read.table”. The three files are merged into a dataset called “test” using the function “cbind”.
 2.The working directory is set to UCI HAR Dataset/train. The files subject_train.txt, X_train.txt and y_train.text are read into R using the function “read.table”. The three files are merged into a dataset called “train” using the function “cbind”.
 3. The two datasets “test and “train” are merged into a single dataset called “data” using   “rbind”
-4. The mean and standard deviation values of X along with the subject and y values are extracted from the dataset “data” by subsetting.
+4. The mean and standard deviation values of X along with the subject and y values are extracted from the dataset “data” by suing the function "grep" and the dataset containing the values is called "mean_stddev_data".
 5. The descriptive activity names are given to the second column containing y values by subsetting the dataset.
 6 The descriptive variable names are used for labeling the dataset.
-7. The second, independent tidy dataset with the average of each variable for each activity and each subject is created using the “plyr” package and function “ddply”.
-8. The file created in step 7 is saved into a file called “Course_Project.csv” using the function “write.csv”
+7. The second, independent tidy dataset with the average of each variable for each activity and each subject is created using the “plyr” package and function “ddply”. The descriptive variable names are used for labeling the dataset.
+8. The file created in step 7 is written into a file called “Course_Project_Tidy_data.csv” using the function “write.csv”
 
 

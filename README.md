@@ -24,7 +24,7 @@ run_analysis.R code:
 4. The mean and standard deviation values of X along with the subject and y values are extracted from the dataset “data” by suing the function "grep" and the dataset containing the values is called "mean_stddev_data".
 5. The descriptive activity names are given to the second column containing y values by subsetting the dataset.
 6 The descriptive variable names are used for labeling the dataset.
-7. The second, independent tidy dataset with the average of each variable for each activity and each subject is created using the “plyr” package and function “ddply”. The descriptive variable names are used for labeling the dataset.
-8. The file created in step 7 is written into a file called “Course_Project_Tidy_data.csv” using the function “write.csv”
+7. The second, independent tidy dataset "x" with the average of each variable for each activity and each subject is created using the “plyr” package and function “ddply”. The descriptive variable names are used for labeling the dataset.
+8. The file created in step 7 is written into a file called “Course_Project_Tidy_data.csv” using the function “write.csv”.
 
 

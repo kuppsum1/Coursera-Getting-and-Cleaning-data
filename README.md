@@ -26,5 +26,5 @@ run_analysis.R code:
 6 The descriptive variable names are used for labeling the dataset.
 7. The second, independent tidy dataset "x" with the average of each variable for each activity and each subject is created using the “plyr” package and function “ddply”. The descriptive variable names are used for labeling the dataset.
 8. The file created in step 7 is written into a file called “Course_Project_Tidy_data.csv” using the function “write.csv”.
-
+9. The “Course_Project_Tidy_data.csv” file was exported to pdf format befor uploading it to Coursera.
 

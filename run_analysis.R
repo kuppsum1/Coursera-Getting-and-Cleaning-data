@@ -40,4 +40,3 @@ library(plyr)
 x <- ddply(mean_stddev_data, c("subject","activity"), function(x) colMeans(x[ ,c(3:81)]))
 names(x)[3:81] <- sub("^", "average-", names(x[3:81]))
 write.csv(x, file = "/Users/suma/Desktop/Course_Project_Tidy_data.csv")
-#exported the file to pdf format before uploading it
